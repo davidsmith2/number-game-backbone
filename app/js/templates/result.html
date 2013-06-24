@@ -1,0 +1,28 @@
+<script id="result-template" type="text/template">
+    <header class="dialog-header">
+      <% if (result === 'win') { %>
+      <h1>Well Done!</h1>
+      <% } else { %>
+      <h1>Bad Luck!</h1>
+      <% } %>
+    </header>
+    <div class="dialog-content">
+      <% if (result === 'win') { %>
+      <p>
+        You guessed right. 
+      <% } else { %>
+      <p>
+        You guessed wrong. 
+      <% } %>
+        The secret number was&#8230;
+        <span class="secret-number"><%= secretNumber %></span>
+      </p>
+    </div>
+    <footer class="dialog-footer">
+      <div class="buttons">
+        <a href="#play" class="button button-green">Replay</a>
+        <!-- <a href="#top-scores" class="button button-blue">Top Scores</a> -->
+        <a href="#splash" class="button button-red">Exit</a>
+      </div>
+    </footer>
+</script>

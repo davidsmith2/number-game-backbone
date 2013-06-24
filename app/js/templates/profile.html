@@ -1,0 +1,25 @@
+<script id="profile-template" type="text/template">
+    <header class="dialog-header">
+      <h1>Profile</h1>
+    </header>
+    <div class="dialog-content">
+      <form id="profile-form">
+        <fieldset>
+          <legend>Player Information</legend>
+          <div class="float-left width-50">
+            <label for="firstName">First name:</label>
+            <input class="width-75" id="firstName" placeholder="<%= firstName %>" type="text" />
+          </div>
+          <div class="float-left width-50">
+            <label for="lastName">Last name:</label>
+            <input class="width-75" id="lastName" placeholder="<%= lastName %>" type="text" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <footer class="dialog-footer">
+      <div class="buttons">
+        <a href="#splash" class="button button-green">OK</a>
+      </div>
+    </footer>
+</script>
