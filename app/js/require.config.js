@@ -5,7 +5,7 @@ requirejs.config({
         'jquery':               'lib/jquery-1.7.2.min',
         'jquery.tools':         'lib/jquery.tools.min',
         'text':                 'lib/text',
-        'underscore':           'lib/underscore-min'
+        'underscore':           'lib/lodash.compat'
     },
 	shim: {
         'backbone': {
